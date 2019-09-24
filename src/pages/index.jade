@@ -1,0 +1,101 @@
+doctype html
+html(lang="pl")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+
+    link(href='https://fonts.googleapis.com/css?family=Lato:100', rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+    link(href='/static/css/style.css', rel='stylesheet')
+
+  body
+    .container
+      header.body-header
+        section.img
+          figure
+            img(src='/static/assets/ja.jpg')
+        section.title
+          h1 The#[span Hard]Way
+          h2 Damian Wiśniewski
+        section.links
+          a(href="#") #[i.fa.fa-twitter]#[span thehardway15]
+          a(href="#") #[i.fa.fa-facebook-f]#[span thehardwaypl]
+          a(href="#") #[i.fa.fa-envelope]#[span dev@thehardway.pl]
+      .content-container
+        main
+          section.breadcrumbs
+            div: / #[a(href="#") Wszystkie wpisy / #[span Programowanie]]
+          section
+            - for (var x = 0; x < 2; x++)
+              article
+                header
+                  a(href="#") Jak (nie) rozpocząłem projektu.
+                section.content
+                  figure
+                    img(src="https://appdevelopermagazine.com/images/news_images/Talk-about-Developer-Failures-App-Developer-Magazine_da2g93dk.jpg")
+                  h2 Czyli o tym jak perfekcjonizm i ambicja skutecznie zablokował rozpoczęcie nowego projektu.
+
+                  p Dawno temu w odległej galaktyce narodził się pomysł. Od jego narodzin rozpoczęła się ta historia. 
+                    Pomysł posiadał wielki potencjał a jego twórca pokładał w nim olbrzymie nadzieje. 
+                    Jest on innowacyjny oraz szlachetny ponieważ główną ideą przyświecającą jego narodzinom była pomoc 
+                    ludziom i rozwiązać ich największe rozterki. Jednak opowieść nie jest o samym pomyśle ale o tym 
+                    dlaczego do dzisiaj nie dorósł i nie stał się produktem.
+
+                footer
+                  section
+                    .date Marzec #[span 2018]
+                    .link: a(href="#") Czytaj dalej...
+                  section.links
+                    div  Kategoria: #[a(href="#") Programowanie]
+              article
+                header
+                  a(href="#") Node.JS + ES6
+                section.content
+                  figure
+                    img(src="https://www.wykop.pl/cdn/c3397993/link_j8vTHD1Bl00Ccoo3CnwGEvgo7FOKeERb,w300h223.jpg")
+                  h2
+                    Pokażę co potrzebujemy aby uruchomić projekt z wykorzystaniem składni ES6.
+
+                  p Jeśli pogodzimy się z faktem, że nie wszystkie elementy składni będą działać, 
+                    takie jak np import to nie musimy robić zbyt wiele. Instalujemy nodejs w wersji 6.6 lub iojs w wersji 3.3 i działa.
+
+                    Ja jednak chciałem czegoś więcej i tutaj z pomocą przyszedł babel. To rozwiązanie ma jednak spory minus, 
+                    przed wdrożeniem projektu musimy skompilować całość do ES5 ale nie ma to jak przyjemność z pisania a być 
+                    może w kolejnymi wersjami node będziemy mogli zrezygnować z kompilacji.
+
+                footer
+                  section
+                    .date Marzec #[span 2018]
+                    .link: a(href="#") Czytaj dalej...
+                  section.links
+                    div  Kategoria: #[a(href="#") Programowanie]
+                    div Technologia: #[a(href="#") Javascript] #[a(href="#") Docker]
+                    div Seria: #[a(href="#") MEAN.JS i ES6]
+        aside
+          nav
+            section
+              h3 Strony
+              ul
+                li: a(href="#") O mnie
+            section
+              h3 Serie
+              ul
+                li: a(href="#") Seria 1
+                li: a(href="#") Seria 2
+            section
+              h3 Kategorie
+              ul
+                li: a(href="#") Programowanie
+                li: a(href="#") Finanse
+                li: a(href="#") Wyzwania
+            section
+              h3 Technologie
+              ul
+                li: a(href="#") Python
+                li: a(href="#") JavaScript
+                li: a(href="#") Docker
+
+      footer.main-footer
+        section &#x24D2; Damian Wiśniewski The#[span Hard]Way
+      script(src="/static/js/jquery.min.js")
